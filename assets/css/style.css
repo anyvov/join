@@ -1,0 +1,860 @@
+@import url(main.css);
+
+/*========== 기본 ==========*/
+body {
+}
+
+.br-b9 {
+    border-bottom: 9px solid var(--colorf2);
+}
+
+.bgc-puple {
+    background-color: #9431E2;
+}
+
+/*========== 파일박스 ==========*/
+.filebox input[type="file"]{
+    appearance: none;
+    display: none;
+}
+
+/*========== 보더 ==========*/
+.bbf9 {
+    border: 0px;
+    border-bottom: 1px solid var(--color999);
+}
+
+.bdt{
+    border-top: 1px solid var(--colorDA);
+}
+
+.bdb{
+    border-bottom: 1px solid var(--colorDA);
+}
+
+.bcF2 {
+    border: 1px solid var(--colorF2);
+}
+
+.radiusL{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.radiusR{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*========== 폰트 사이즈 ==========*/
+.fs-36 {
+    font-size: calc(var(--u10) * 3.6);
+    line-height: calc(var(--u10) * 3.6);
+  }
+
+/*========== 폰트 컬러 ==========*/
+.fcF2 {
+    color: var(--colorF2);
+}
+
+/*========== 배경 컬러 ==========*/
+.bgc-F2 {
+    background-color: var(--colorF2);
+  }
+
+
+/*========== 패딩 ==========*/
+.pdlr20 {
+    padding: 0 calc(var(--u10) * 2);
+}
+
+.pd2-10{
+    padding: 2px 10px;
+}
+
+.pd5-10{
+    padding: 5px 10px;
+}
+
+.pd8-20{
+    padding: 8px 20px;
+}
+
+@media screen and (max-width:320px) {
+    .pd8-20{
+        padding: 8px 10px;
+    }
+}
+
+/*========== 버튼 ==========*/
+.btn-outlineF2 {
+    border: 1px solid var(--colorF2);
+}
+
+/*========== 탭 ==========*/
+.main-tab .tabHead {
+    background-color: var(--colorf2);
+    padding: 20px;
+}
+
+.main-tab .tabs .tabHead input[type=radio] + label {
+    padding: 5px calc(var(--u10) * 2) ;
+    border-radius: 20px;
+    background-color: var(--colorWt);;
+}
+
+.main-tab .tabs .tabHead input[type=radio]:checked + label {
+    background-color: #444;
+    color: var(--colorWt);
+}
+
+/*========== 헤더 ==========*/
+header {
+    position: var(--poS);
+}
+
+.header-area {
+    
+}
+
+.badge {
+    top: -1px;
+    right: -6px;
+    font-size: 10px;
+    width: 17px;
+    height: 17px;
+}
+
+.logo {
+    background-image: url(../images/logo.png);
+    background-position: center;
+    background-size: cover;
+    width: 81px;
+    height: 20px;
+}
+
+/*========== 메인 ==========*/
+.mainTitle {
+    padding: 27px 15px;
+    border-bottom: 9px solid var(--colorf2);
+}
+
+/*========== 메인베너 ==========*/
+.main_Bn img{
+    width: 100%;
+}
+
+/*========== 대회서치 ==========*/
+.Competition_search {
+    border-radius: 10px;
+    background: var(--colorE0);
+    padding: 30px 15px;
+    color: var(--color26);
+}
+
+.search {
+    border-radius: 100px;
+    background-color: var(--colorF5); 
+    padding: 10px 20px; 
+    box-shadow: 0px 2px 0px 0px var(--colorWt) inset;
+    filter: drop-shadow(0px 5px 5px rgba(95, 132, 189, 0.20));
+}
+
+.search input {
+    background-color: var(--colorF5);
+}
+
+.detailed-search {
+    transition: all .3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+}
+
+.detailed-search.active {
+    visibility: visible;
+    opacity: 1;
+    height: 100%
+}
+
+.detailed-search li {
+    position: relative;
+}
+
+/*========== 날짜선택 ==========*/
+.acoBox {
+    transition: all .3s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    padding: 0 20px;
+}
+
+.acoBox.active {
+    margin-top: calc(var(--u10) * 4);
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+}
+
+.listpopup-area {
+    background-color: #fff;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+}
+
+.calendar {
+    background-color: #fff;
+}
+
+.calendar .table tr {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    font-size: 15px;
+}
+
+.calendar .table tr td{
+    border: 1px solid var(--colorf1);
+}
+
+@media screen and (max-width:320px) {
+    .calendar .table tr {
+        font-size: 13px;
+    }
+
+    .calendar .table tr td {
+        height: calc( var(--u10) * 5) !important;
+        padding: 5px;
+    }
+}
+
+.calendar .table tr td {
+    height: 80px;
+    vertical-align: var(--top);
+}
+
+/* 두번째 */
+.acoBox02 {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all .3s ease-out;
+    display: none;
+}
+
+.acoBox02.active {
+    transform: translateY(calc(-10%));
+    opacity: 1;
+    visibility: visible;
+    height: inherit;
+    display: block;
+}
+
+.backbg {
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 9;
+    opacity: 0;
+    visibility: hidden;
+    transition: transform .3s ease-in-out;
+}
+
+.backbg.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 화살표 무브 */
+.acoBtn .i-arrowRight {
+    transition: all .3s;
+}
+.acoBtn .i-arrowRight.active {
+    transform: rotate(90deg);
+}
+
+/*========== 대회 지원 참가자 ==========*/
+
+/*========== 신규대회 ==========*/
+.chatRoom {
+    grid-template-columns: 70px 1fr 100px;
+}
+
+
+@media screen and (max-width:390px) {
+    .chatRoom {
+        grid-template-columns: 1fr;
+        text-align: var(--center);
+    }
+}
+
+/*========== 참가하기 ==========*/
+.attendlistH {
+    height: calc(var(--u10) * 15)
+}
+
+/*========== 홀덤 대회 보기 ==========*/
+.attend03_pfile {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+}
+
+.attend03_mw70px {
+    max-width: calc(var(--u10) * 7);
+}
+
+.attend03Tab .tabHead{
+    display: var(--grid);
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.attend03Tab .tabHead label{
+    padding: 15px;
+    border-bottom: 3px solid var(--transparent);
+}
+
+.attend03Tab .tabHead input[type=radio]:checked + label {
+    border-bottom: 3px solid var(--colorF2);
+    font-weight: bold;
+    color: #000;
+}
+
+.attend03_listBar li:after{
+    content: '';
+    display: var(--inlineBlock);
+    width: 2px;
+    height: 10px;
+    margin: 0 10px;
+    background-color: var(--colorBk);
+
+}
+
+.attend03_listBar li:last-child:after {
+    display: none;
+}
+
+/* 참가자 탭 */
+.participant-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.participant-grid label {
+    padding: 0;
+}
+
+.participant-grid li{
+    margin-bottom: 20px;
+}
+
+.participant-grid .form-check {
+    cursor: pointer;
+    right: 5px;
+    bottom: 0px;
+  }
+  
+  .participant-grid .check-input {
+    appearance: none;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #dadada;
+    position: relative;
+    background-color: #fff;
+    border-radius: 50%;
+    /* margin-right: 10px; */
+  }
+  
+  .participant-grid .check-input:checked::before {
+    content: "✔";
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: var(--colorMain);
+    /* background-image: url(/assets/images/check.png);
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: center; */
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  
+  .participant-grid .form-check span {
+    font-size: 14px;
+  }
+
+  /* 선호하는 플레이어 */
+  .genderBtn input[type=radio]{
+    appearance: none;
+    display: none;
+  }
+
+  .genderBtn input[type=radio] + label {
+    border: 1px solid #eee;
+    padding: 7px 15px;
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    text-align: var(--center);
+  }
+
+  .genderBtn input[type=radio]:checked + label {
+    background-color: var(--colorBBB);
+    color: var(--colorWt);
+  }
+
+  @media screen and (max-width:512px) {
+    .column512 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  }
+
+  @media screen and (max-width:320px) {
+    .column320 {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+  }
+
+    /* 대회 참가 지원자 */
+    .grid2fr {
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+  /*========== 팝업 ==========*/
+  .popup-area {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    font-family: 'Noto Sans KR';
+  }
+  
+  .popup-box {
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .popup-box .close {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .popup-box .close span {
+    font-weight: 700;
+    font-size: 20px;
+    color: #000;
+  }
+  
+  .popup-box .close button img {
+    width: 100%;
+  }
+  
+  .popup-box > button {
+    background: #000;
+    border-radius: 30px;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .popup-box .body h3 {
+    line-height: normal;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #000;
+  }
+  
+  .popup-box .body {
+    font-family: "Noto Sans KR";
+    font-weight: 400;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 30px;
+  }
+/*   
+  .popup-box .body .time {
+    font-family: "Century Gothic";
+  }
+  
+  .popup-box .body .time span {
+    font-weight: 400;
+    font-size: ($십픽셀 * 2);
+  }
+  
+  .popup-box .body .time h4 {
+    font-weight: 700;
+    font-size: 32px;
+  }
+  
+  .popup-box .body > span {
+    margin-bottom: 15px;
+    display: $블록선언;
+  }
+   */
+
+/*========== 모집하기 ==========*/
+.bd-dot {
+    border: 1px dotted #DF7ED0;;
+}
+
+.h140 {
+    height: calc(var(--u10) * 14);
+}
+
+/* 홀덤대회 만들기 */
+.re-w100 {
+    width: 100px;
+}
+
+.re-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/*========== 대회 초청 리스트 ==========*/
+.invitabs {
+
+}
+
+ .tabHead.invitabs input[type=radio] + label {
+    padding: 5px calc(var(--u10) * 2) ;
+    border-radius: 20px;
+    background-color: var(--colorWt);;
+}
+
+.tabHead.invitabs input[type=radio]:checked + label {
+    background-color: #444;
+    color: var(--colorWt);
+}
+
+
+/*========== 대회 참가 지원자 ==========*/
+.img32 {
+    width: 32px !important;
+    height: 32px !important;
+}
+
+.img76 {
+    width: 76px;
+    height: 76px;
+}
+
+.img80 {
+    width: 80px;
+    height: 80px;
+}
+
+.img160 {
+    width: 160px;
+    height: 160px;
+}
+
+.img186 {
+    max-width: 186px;
+    height: 186px;
+}
+
+
+/*========== 회원가입 ==========*/
+.filebox_img {
+    background-image: url(../images/file.png);
+    background-size: cover;
+    background-position: center;
+    width: 160px;
+    height: 160px;
+    display: inline-block;
+}
+
+/*========== 공지사항 ==========*/
+.txt_dot {
+    max-width: 95%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+
+/*========== 메인메뉴 ==========*/
+.mainMenu-area {
+    padding: 10px 0;
+    box-shadow: -1px 1px 7px #9d9d9d;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 20;
+}
+
+.mainMenu {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.mainMenu i {
+    display: var(--block);
+    width: 35px;
+    height: 28px;
+}
+
+@media screen and (max-width:320px) {
+   .mainMenu {
+    font-size: 12px;
+   } 
+
+   .mainMenu i {
+    width: 25px;
+    height: 25px;
+   }
+}
+
+.mainMenu .menu01:hover .i-home {
+    background-image: url(../images/navi_1_1.png);
+}
+
+.mainMenu .menu02:hover .i-attend {
+    background-image: url(../images/navi_2_1.png);
+}
+
+.mainMenu .menu03:hover .i-recruitment {
+    background-image: url(../images/navi_3_1.png);
+}
+
+.mainMenu .menu04:hover .i-mp {
+    background-image: url(../images/navi_4_1.png);
+}
+
+
+/*========== 아이콘 ==========*/
+.i {
+    display: inline-block;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.i-bell {
+    width: 22.341px;
+    height: 24.871px;
+    background-image: url(../images/icon/bell.png);
+}
+
+.i-Group {
+    width: 26px;
+    height: 23px;
+    background-image: url(../images/icon/Group.png);
+}
+
+.i-login {
+    width: 28.004px;
+    height: 28.004px;
+    background-image: url(../images/icon/ico_top_login.png);
+}
+
+.i-search {
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/icon/ico_search.png);
+}
+
+.i-calender {
+    width: 21px;
+    height: 19px;
+    background-image: url(../images/icon/ico_calender.png);
+}
+
+.i-man {
+    width: 19px;
+    height: 19px;
+    background-image: url(../images/icon/ico_man.png);
+}
+
+.i-arrowRight {
+    width: 6.98px;
+    height: 13.961px;
+    background-image: url(../images/icon/ico_arrow_right_gray.png);
+}
+
+.i-arrowLeft {
+    width: 6.98px;
+    height: 13.961px;
+    background-image: url(../images/icon/arrow_left.png);
+}
+
+.i-close {
+    width: 20px;
+    height: 20px;
+    background-image: url(../images/icon/ico_popup_closed.png);
+}
+
+.i-close02 {
+    width: 20px;
+    height: 18px;
+    background-image: url(../images/icon/btn_mapsearch_closed.png);    
+}
+
+.i-arrowRight02 {
+    width: 17px;
+    height: 9px;
+    background-image: url(../images/icon/ico_Line_right.png);
+}
+
+.i-scrollTop {
+    width: 15px;
+    height: 19px;
+    background-image: url(../images/icon/arrowTop.png);
+}
+
+.i-home02 {
+    width: 21.175px;
+    height: 18px;
+    background-image: url(../images/icon/home.png);
+}
+
+.i-arrowDown {
+    width: 17px;
+    height: 9px;
+    background-image: url(../images/icon/ico_list_bottom.png);
+}
+
+.i-b {
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/icon/ico_b.png);
+}
+
+.i-p {
+    width: 15px;
+    height: 15px;
+    background-image: url(../images/icon/ico_p.png);
+}
+
+.i-phone {
+    width: 18px;
+    height: 18px;
+    background-image: url(../images/icon/ico_phone.png);
+}
+
+.i-letter {
+    width: 21px;
+    height: 18px;
+    background-image: url(../images/icon/letter.png);
+}
+
+/* 편의정보 아이콘 */
+.i-car {
+    width: 45px;
+    height: 45px;
+    background-image: url(../images/icon/ico_car.png);
+}
+
+.i-card {
+    width: 45px;
+    height: 45px;
+    background-image: url(../images/icon/ico_card.png);
+}
+
+.i-wife {
+    width: 45px;
+    height: 45px;
+    background-image: url(../images/icon/ico_wife.png);
+}
+
+.i-calender02 {
+    width: 45px;
+    height: 45px;
+    background-image: url(../images/icon/ico_calender02.png);
+}
+
+.i-people {
+    width: 45px;
+    height: 45px;
+    background-image: url(../images/icon/ico_people.png);
+}
+
+.i-cigarette {
+    width: 45px;
+    height: 45px;
+    background-image: url(../images/icon/ico_cigarette.png);
+}
+
+.i-parking {
+    width: 45px;
+    height: 45px;
+    background-image: url(../images/icon/ico_parking.png);
+}
+
+/* 매장위치 아이콘 */
+.i-m-search {
+    width: 16px;
+    height: 15px;
+    background-image: url(../images/icon/ico_map_search.png);
+}
+
+.i-m-navi {
+    width: 19px;
+    height: 15px;
+    background-image: url(../images/icon/ico_map_navi.png);
+}
+
+.i-m-copy {
+    width: 14px;
+    height: 15px;
+    background-image: url(../images/icon/ico_map_copy.png);
+}
+
+/* 모집하기 */
+.i-cross {
+    width: 45px;
+    height: 45px;
+    background-image: url(../images/icon/ico_cross.png);
+}
+
+/*========== 메뉴아이콘 ==========*/
+.i-home {
+    background-image: url(../images/navi_1_2.png);
+}
+
+.i-attend {
+    background-image: url(../images/navi_2_2.png);
+}
+
+.i-recruitment {
+    background-image: url(../images/navi_3_2.png);
+}
+
+.i-mp {
+    background-image: url(../images/navi_4_2.png);
+    width: 25px !important;
+}
+

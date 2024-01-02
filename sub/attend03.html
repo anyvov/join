@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--=============== STYLE ===============-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>홀덤 조인</title>
+</head>
+
+<body class="noto-Regular">
+
+    <!--=============== 헤더 ===============-->
+    <header>
+        <div class="header-area bgc-main pd20 flex ai-c jc-sb">
+            <button type="button" class="i i-arrowLeft"></button>
+            <span class="fs-18 fw700">홀덤대회보기</span>
+            <a href="../index.html" class="i i-home02"></a>
+        </div>
+    </header>
+
+    <main>
+        <!--=============== 타이틀 ===============-->
+        <section class="mainTitle mb20">
+            <h1 class="fs-24 fwb noto-Regular">강남에서 홀덤 하실 분 구합니다!</h1>
+        </section>
+
+        <!--=============== 프로필 ===============-->
+        <section>
+            <div class="attend03_pfile pd20">
+                <div>
+                    <img src="../assets/images/dialog_ch01.png" alt=""  class="attend03_mw70px">
+                </div>
+                <div>
+                    <h3 class="fwb fs-18 mb05">홀덤매니아</h3>
+                    <ul class="flex ai-c mb10 attend03_listBar">
+                        <li>남자</li>
+                        <li>3년</li>
+                        <li>서울, 분당</li>
+                    </ul>
+                    <p class="fc777">
+                        강남역 또는 논현역에서 오후 9시 이후로 가능하고,5~6만 가능합니다.<br>
+                        좋은분들과 함께 하고 싶습니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== 탭 ===============-->
+        <section>
+            <div class="tabs attend03Tab bdt">
+                
+                <!--:::::: 탭 버튼 ::::::-->
+                <div class="tabHead gap20 ta-c">
+                    <input type="radio" name="tabs" id="tabBtn" checked>
+                    <label for="tabBtn">대회정보</label>
+
+                    <input type="radio" name="tabs" id="tabBtn2">
+                    <label for="tabBtn2">참가자</label>
+
+                    <input type="radio" name="tabs" id="tabBtn3">
+                    <label for="tabBtn3">상금</label>
+
+                    <input type="radio" name="tabs" id="tabBtn4">
+                    <label for="tabBtn4">매장정보</label>
+                </div>
+
+                <hr class="br-b9">
+
+                <!--:::::: 탭 컨텐츠01 - 대회 정보 ::::::-->
+                <div class="tab-content pd20 active">
+                    <div class="flex fd-c ai-c ta-c gap20 mb50">
+                        <div class="mb20">
+                            <h3 class="fs-16 mb10">시작까지 남은시간</h3>
+                            <p class="fs-36 noto-Bold">14:03:29</p>
+                        </div>
+
+                        <div class="flex fd-c ai-c ta-c">
+                            <h3 class="fs-16 mb10 noto-Bold">현재 참여인원</h3>
+                            <div class="flex ai-c gap10">
+                                <i class="i i-man filter-gc img32"></i>
+                                <span class="fs-18">7/9</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <ul class="mb50">
+                        <li class="mb20">
+                            <h3 class="fs-18 fwb mb05">대회 시작 시간</h3>
+                            <span class="fs-16">2023-05-12  20:00</span>
+                        </li>
+                        <li class="mb20">
+                            <h3 class="fs-18 fwb mb05">장소</h3>
+                            <span class="fs-16">에이스 라운지 홀덤펍</span>
+                        </li>
+                        <li>
+                            <h3 class="fs-18 fwb mb05">바이인</h3>
+                            <span class="fs-16">60,000</span>
+                        </li>
+                    </ul>
+
+                    <button type="button" class="btn bgc-F2 btn-outlineF2 w100p fcWt pd15 radius10 fs-18">대회 신청하기</button>
+                </div>
+
+                <!--:::::: 탭 컨텐츠02 - 참가자 ::::::-->
+                <div class="tab-content pd20">
+
+                    <!-- 현제 참여인원 -->
+                    <div class="flex fd-c ai-c ta-c mb50 mt20">
+                        <div class="mb20">
+                            <h3 class="fs-16 mb10 noto-Bold">현재 참여인원</h3>
+                            <div class="flex ai-c gap10">
+                                <i class="i i-man filter-gc" style="width: 32px; height: 32px;"></i>
+                                <span class="fs-18">7/9</span>
+                            </div>
+                        </div>
+                        
+                        <!-- 참가자편집 -->
+                        <div class="flex ai-c gap10">
+                            <span class="fwb fs-16">참가자 편집</span>
+                            <div>
+                                <input type="checkbox" id="toggle" hidden />
+                
+                                <label for="toggle" class="toggleSwitch">
+                                  <span class="toggleButton"></span>
+                                </label>
+                              </div>
+                        </div>
+                    </div>
+
+                    <!-- 참가자 리스트 -->
+                    <div>
+                        <ul class="grid participant-grid">
+                            <li>
+                                <label for="pgList01" class="flex fd-c ai-c cursor-p">
+                                    <div class="poR">
+                                        <img src="../assets/images/dialog_ch01.png" alt="" class="attend03_mw70px">
+                                        <div class="form-check poA">
+                                            <input type="checkbox" name="" id="pgList01" class="check-input poA" checked>
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ta-c">
+                                        <h3 class="fwb">홀덤조하</h3>
+                                        <p class="fwb">2023-05-12</p>
+                                        <p class="fwb">20:00</p>
+                                        <p>서울 I 광진</p>
+                                    </div>
+                                </label>
+                            </li>
+    
+                            <li>
+                                <label for="pgList02" class="flex fd-c ai-c cursor-p">
+                                    <div class="poR">
+                                        <img src="../assets/images/dialog_ch01.png" alt="" class="attend03_mw70px">
+                                        <div class="form-check poA">
+                                            <input type="checkbox" name="" id="pgList02" class="check-input poA">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ta-c">
+                                        <h3 class="fwb">홀덤조하</h3>
+                                        <p class="fwb">2023-05-12</p>
+                                        <p class="fwb">20:00</p>
+                                        <p>서울 I 광진</p>
+                                    </div>
+                                </label>
+                            </li>
+                            
+                            <li>
+                                <label for="pgList03" class="flex fd-c ai-c cursor-p">
+                                    <div class="poR">
+                                        <img src="../assets/images/dialog_ch01.png" alt="" class="attend03_mw70px">
+                                        <div class="form-check poA">
+                                            <input type="checkbox" name="" id="pgList03" class="check-input poA">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ta-c">
+                                        <h3 class="fwb">홀덤조하</h3>
+                                        <p class="fwb">2023-05-12</p>
+                                        <p class="fwb">20:00</p>
+                                        <p>서울 I 광진</p>
+                                    </div>
+                                </label>
+                            </li>
+    
+                            <li>
+                                <label for="pgList04" class="flex fd-c ai-c cursor-p">
+                                    <div class="poR">
+                                        <img src="../assets/images/dialog_ch01.png" alt="" class="attend03_mw70px">
+                                        <div class="form-check poA">
+                                            <input type="checkbox" name="" id="pgList04" class="check-input poA">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ta-c">
+                                        <h3 class="fwb">홀덤조하</h3>
+                                        <p class="fwb">2023-05-12</p>
+                                        <p class="fwb">20:00</p>
+                                        <p>서울 I 광진</p>
+                                    </div>
+                                </label>
+                            </li>
+    
+                            <li>
+                                <label for="pgList05" class="flex fd-c ai-c cursor-p">
+                                    <div class="poR">
+                                        <img src="../assets/images/dialog_ch01.png" alt="" class="attend03_mw70px">
+                                        <div class="form-check poA">
+                                            <input type="checkbox" name="" id="pgList05" class="check-input poA">
+                                            <span></span>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="ta-c">
+                                        <h3 class="fwb">홀덤조하</h3>
+                                        <p class="fwb">2023-05-12</p>
+                                        <p class="fwb">20:00</p>
+                                        <p>서울 I 광진</p>
+                                    </div>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <button type="button" class="btn btn-outline fcMain w100p pd15 radius10 fs-18">내보내기</button>\
+
+                    <!-- 팝업 -->
+                    <div class="popup-area seed-direct-popup">
+                        <div class="popup-box">
+                        <div class="body">
+                            <p><b class="fwb">홀덤조아</b> 님을</p>
+                            <p>내보내시겠습니까?</p>
+                        </div>
+                
+                        <div class="flex ai-c gap10">
+                            <button type="button" class="btn bgc-F2 btn-outlineF2 w100p fcWt pd15 radius10 fs-18">확인</button>
+                            <button type="button" class="btn btn-outline btn-outlineF2 fcF2 w100p pd15 radius10 fs-18">취소</button>
+                        </div>
+                        
+                        </div>
+                    </div>
+                </div>
+
+                <!--:::::: 탭 컨텐츠03 - 상금 ::::::-->
+                <div class="tab-content ">
+                    
+                    <!-- 총상금 -->
+                    <div class="flex ai-c jc-sa pdb20 brbf1 fs-18 fwb ta-c">
+                        <span>총상금</span>
+                         <div>
+                            <p class="mb05">100,000,000</p>
+                            <span>(10엔트리기준)</span>
+                         </div>
+                    </div>
+
+                    <!-- 리스트 -->
+                    <div class="mb50">
+                        <table class="table table-underLine ta-c table-column fs-18">
+                            <tbody>
+                                <tr>
+                                    <td>1위</td>
+                                    <td>200,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>2위</td>
+                                    <td>200,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>3위</td>
+                                    <td>200,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>4위</td>
+                                    <td>200,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>5위</td>
+                                    <td>200,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>6위</td>
+                                    <td>200,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>7위</td>
+                                    <td>200,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>8위</td>
+                                    <td>200,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>9위</td>
+                                    <td>200,000,000</td>
+                                </tr>
+                                <tr>
+                                    <td>10위</td>
+                                    <td>200,000,000</td>
+                                </tr>
+                            </tbody>
+                            
+                        </table>
+                    </div>
+                </div>
+                
+                <!--:::::: 탭 컨텐츠04 - 매장정보 ::::::-->
+                <div class="tab-content">
+                    
+                    <!-- 스토어 이미지 -->
+                    <div>
+                        <img src="../assets/images/store.png" alt="">
+                    </div>
+
+                    <!-- 매장정보 상세 -->
+                    <h1 class="fs-24 fwb noto-Regular pd20 brbf1">에이스 라운지 홀덤펍</h1>
+                    
+                    <!-- 전화번호/영업시간 -->
+                    <div class="pd20">
+                        <ul>
+                            <li class="mb20">
+                                <h3 class="fwb fs-16 mb10">전화번호</h3>
+                                <a href="#" class="d-inB">
+                                    <div class="flex ai-c bgc-main pd2-10 radius20">
+                                        <i class="i i-phone"></i>
+                                        <span>02-562-8000</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <h3 class="fwb fs-16 mb10">영업시간</h3>
+                                <span>16:00 - 20:00</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 편의정보 -->
+                    <div class="pd20 brbf1 brtf1">
+                        <h3 class="fwb">편의정보</h3>
+                    </div>
+
+                    <!-- 편의정보 리스트 -->
+                    <ul class="pd20 flex gap10 wsn flex-wrap">
+                        <li>
+                            <div class="flex fd-c gap10">
+                                <i class="i i-car"></i>
+                                <span>주차가능</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="flex fd-c gap10">
+                                <i class="i i-card"></i>
+                                <span>신용카드</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="flex fd-c gap10">
+                                <i class="i i-wife"></i>
+                                <span>와이파이</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="flex fd-c gap10">
+                                <i class="i i-calender02"></i>
+                                <span>예약가능</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="flex fd-c gap10">
+                                <i class="i i-people"></i>
+                                <span>단체석</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="flex fd-c gap10">
+                                <i class="i i-cigarette"></i>
+                                <span>흡연실</span>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="flex fd-c gap10">
+                                <i class="i i-parking"></i>
+                                <span>발렛파킹</span>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <hr class="br-b9">
+
+                    <!-- 매장사진 -->
+                    <div>
+                        <div class="pd20 brbf1 brtf1">
+                            <h3 class="fwb">매장사진</h3>
+                        </div>
+
+                        <div>
+                            <img src="../assets/images/store02.png" alt="">
+                        </div>
+                    </div>
+
+                    <!-- 매장위치 -->
+                    <div>
+                        <div class="pd20 brbf1 brtf1">
+                            <h3 class="fwb">매장위치</h3>
+                        </div>
+
+                        <div>
+                            <img src="../assets/images/map.png" alt="">
+                        </div>
+
+                        <div class="pd20">
+                            <p class="">서울 강남구 삼성동 143-18 삼성타워5층</p>
+                        </div>
+                        
+                        <div class="pd20">
+                            <ul class="flex wsn">
+                                <li class="w100p">
+                                    <div class="pd10 brf1 radiusL flex ai-c jc-sb">
+                                        <i class="i i-m-search"></i>
+                                        <span>길찾기</span>
+                                    </div>
+                                </li>
+                                <li class="w100p">
+                                    <div class="pd10 brf1 flex ai-c jc-sb">
+                                        <i class="i i-m-navi"></i>
+                                        <span>네비게이션</span>
+                                    </div>
+                                </li>
+                                <li class="w100p">
+                                    <div class="pd10 brf1 radiusR flex ai-c jc-sb">
+                                        <i class="i i-m-copy"></i>
+                                        <span>주소복사</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <div class="backbg"></div>
+
+    <!--========== SCROLL UP ==========-->
+    <button type="button" class="scrollup" id="scroll-up">
+        <i class="i i-scrollTop scrollup__icon"></i>
+    </button>
+
+</body>
+
+    <!--=============== JS ===============-->
+    <script src="../assets/js/main02.js"></script>
+</html>

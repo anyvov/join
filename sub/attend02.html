@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--=============== STYLE ===============-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>홀덤 조인</title>
+</head>
+
+<body class="noto-Regular">
+
+    <!--=============== 헤더 ===============-->
+    <header>
+        <div class="header-area bgc-main pd20 flex ai-c jc-sb">
+            <button type="button" class="i i-arrowLeft"></button>
+            <span class="fs-18 fw700">홀덤대회보기</span>
+            <a href="../index.html" class="i i-home02"></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="mainTitle mb20">
+            <h1 class="fs-24 fwb noto-Regular">대회보기</h1>
+        </section>
+
+        <!--=============== 상세 검색 ===============-->
+        <section>
+            <ul class="noto-Bold fs-16 list-underline">
+                
+                <!-- 날짜선택 -->
+                <li>
+                    <!-- 날짜선택 버튼 -->
+                    <div class="acoBtn02 flex ai-c jc-sb pd20 cursor-p">
+                        <div class="flex ai-c gap10">
+                            <i class="i i-calender"></i>
+                            <span class="">날짜선택</span>
+                        </div>
+
+                        <div class="flex ai-c gap20">
+                            <span>2023-05-12</span>
+                            <i class="i i-arrowRight"> </i>
+                        </div>
+                    </div>
+
+                    <!-- 날짜선택 상세 -->
+                    <div class="acoBox02 listpopup-area">
+                        <div class="bgc-wt ta-r pd20">
+                            <button class="calcloseBtn i i-close" type="button"></button>
+                        </div>
+                        <div class=" flex ai-c jc-sb bgc-f2 pd20 mb20">
+                            <div class="flex ai-c gap10">
+                                <i class="i i-calender"></i>
+                                <span class="">날짜선택</span>
+                            </div>
+                            <span>2023-05-12</span>
+                        </div>
+
+                        <!-- 달력 -->
+                        <div class="calendar">
+                            <table class="table wsn">
+                                <thead class="bgc-main noto-Light">
+                                    <tr class="ta-c tt-u">
+                                        <th>sun</th>
+                                        <th>mon</th>
+                                        <th>tue</th>
+                                        <th>wen</th>
+                                        <th>thu</th>
+                                        <th>fri</th>
+                                        <th>sat</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody class="noto-Regular">
+                                    <tr>
+                                        <td class="fc999">27</td>
+                                        <td class="fc999">28</td>
+                                        <td class="fc999">29</td>
+                                        <td class="fc999">30</td>
+                                        <td>1</td>
+                                        <td>2</td>
+                                        <td>3</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>4</td>
+                                        <td>5</td>
+                                        <td>6</td>
+                                        <td>7</td>
+                                        <td>8</td>
+                                        <td>9</td>
+                                        <td>10</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>11</td>
+                                        <td>12</td>
+                                        <td>13</td>
+                                        <td>14</td>
+                                        <td>15</td>
+                                        <td>16</td>
+                                        <td>17</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>18</td>
+                                        <td>19</td>
+                                        <td>20</td>
+                                        <td>21</td>
+                                        <td>22</td>
+                                        <td>23</td>
+                                        <td>24</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>25</td>
+                                        <td>26</td>
+                                        <td>27</td>
+                                        <td>28</td>
+                                        <td>29</td>
+                                        <td>30</td>
+                                        <td>31</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- 지역선택 -->
+                <li>
+                    <!-- 지역선택 버튼 -->
+                    <div class="acoBtn02 flex ai-c jc-sb pd20 cursor-p">
+                        <div class="flex ai-c gap10">
+                            <span class="">지역선택</span>
+                        </div>
+
+                        <div class="flex ai-c gap20">
+                            <span>지역을 선택 해주세요</span>
+                            <i class="i i-arrowRight"> </i>
+                        </div>
+                    </div>
+
+                    <!-- 지역선택 상세 -->
+                    <div class="acoBox02 listpopup-area">
+                        <div class="bgc-wt ta-r pd20">
+                            <button class="calcloseBtn i i-close" type="button"></button>
+                        </div>
+                        
+                        <div class="bgc-wt">
+                            <h1 class="fs-24 fwb noto-Regular pd20">지역선택</h1>
+                            <hr class="br-b9 mb20">
+                        </div>
+                        
+                        <form action="" class="noto-Regular">
+                            <div class="pd20">
+                                <p class="mb20">주소 키워드로 검색 가능합니다</p>
+
+                                <div class="flex ai-c pd15 gap10 bgc-f2 radius10">
+                                    <i class="i i-search"></i>
+                                    <input type="search" class="brNone w100p bgc-trans" placeholder="지역검색">
+                                    <button type="button" class="i i-close02"></button>
+                                </div>
+                            </div>
+
+                            <hr class="br-b9">
+
+                            <!-- 시/군/구 검색 -->
+                            <div class="flex fd-c gap20 pd20 noto-Regular">
+                                <select name="" id="" class="input pd10 bbf9">
+                                    <option value="">시/도</option>
+                                    <option value="">0</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+
+                                <select name="" id="" class="input pd10 bbf9">
+                                    <option value="">구/군</option>
+                                    <option value="">0</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                                </select>
+
+                                <button type="button" class="btn brf1 bc-main fcMain pd15 radius10">검색</button>
+                            </div>
+
+                            <!-- 리스트 -->
+                            <div class="overY attendlistH">
+                                <ul>
+                                    <li class="pd20">
+                                        <p>서울 강남</p>
+                                    </li>
+
+                                    <li class="pd20">
+                                        <p>서울 강남구 정릉</p>
+                                    </li>
+
+                                    <li class="pd20">
+                                        <p>서울 강남</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="pd20">
+                                <button type="button" class="btn bgc-F2 btn-outlineF2 pd15 fcWt w100p radius10">확인</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </li>
+
+            </ul>
+        </section>
+
+        <!--=============== 리스트 ===============-->
+        <section>
+            <!-- 솔팅 -->
+            <div class="bgc-f2 pd20 flex aic jc-c mb20">
+                <ul class="flex gap10 wsn jc-sb">
+                    <li>
+                        <button type="button" class="bgc-444 fcWt pd8-20 radius20">전체</button>
+                    </li>
+
+                    <li>
+                        <button type="button" class="bgc-wt pd8-20 radius20">등록일순</button>
+                    </li>
+
+                    <li>
+                        <button type="button" class="bgc-wt pd8-20 radius20">마감일순</button>
+                    </li>
+
+                    <li>
+                        <button type="button" class="bgc-wt pd8-20 radius20">상금순</button>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 리스트 -->
+            <ul class="pdlr20">
+                <li class="mb20">
+                    <a href="attend03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                        <div class="flex jc-c"><img src="../assets/images/dialog_ch01.png" alt=""></div>
+                        <div class="overH">
+                            <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                            <p>홀덤매니아</p>
+                            <div>
+                                <span>2023-05-12</span>
+                                <span>20:00</span>
+                            </div>
+                            <p>에이스라운지홀덤펍</p>
+                        </div>
+
+                        <div class="flex ai-c fd-c gap05">
+                            <div class="flex ai-c gap10">
+                                <img src="../assets/images/icon/ico_man.png" alt="">
+                                <span>9/18</span>
+                            </div>
+
+                            <div class="flex fd-c gap05">
+                                <div class="bgc-FD radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-b"></i>
+                                    <span>100,000</span>
+                                </div>
+                            
+                                <div class="bgc-pink radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-p"></i>
+                                    <span>10,000,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="mb20">
+                    <a href="attend03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                        <div class="flex jc-c"><img src="../assets/images/dialog_ch02.png" alt=""></div>
+                        <div class="overH">
+                            <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                            <p>홀덤매니아</p>
+                            <div>
+                                <span>2023-05-12</span>
+                                <span>20:00</span>
+                            </div>
+                            <p>에이스라운지홀덤펍</p>
+                        </div>
+
+                        <div class="flex ai-c fd-c gap05">
+                            <div class="flex ai-c gap10">
+                                <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                <span>9/18</span>
+                            </div>
+
+                            <div class="flex fd-c gap05">
+                                <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-b filter-gc"></i>
+                                    <span>100,000</span>
+                                </div>
+                            
+                                <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-p filter-gc"></i>
+                                    <span>10,000,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="mb20">
+                    <a href="attend03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                        <div class="flex jc-c"><img src="../assets/images/thumb_profile_defalt.png" alt=""></div>
+                        <div class="overH">
+                            <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                            <p>홀덤매니아</p>
+                            <div>
+                                <span>2023-05-12</span>
+                                <span>20:00</span>
+                            </div>
+                            <p>에이스라운지홀덤펍</p>
+                        </div>
+
+                        <div class="flex ai-c fd-c gap05">
+                            <div class="flex ai-c gap10">
+                                <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                <span>9/18</span>
+                            </div>
+
+                            <div class="flex fd-c gap05">
+                                <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-b filter-gc"></i>
+                                    <span>100,000</span>
+                                </div>
+                            
+                                <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-p filter-gc"></i>
+                                    <span>10,000,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="mb20">
+                    <a href="attend03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                        <div class="flex jc-c"><img src="../assets/images/dialog_ch01.png" alt=""></div>
+                        <div class="overH">
+                            <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                            <p>홀덤매니아</p>
+                            <div>
+                                <span>2023-05-12</span>
+                                <span>20:00</span>
+                            </div>
+                            <p>에이스라운지홀덤펍</p>
+                        </div>
+
+                        <div class="flex ai-c fd-c gap05">
+                            <div class="flex ai-c gap10">
+                                <img src="../assets/images/icon/ico_man.png" alt="">
+                                <span>9/18</span>
+                            </div>
+
+                            <div class="flex fd-c gap05">
+                                <div class="bgc-FD radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-b"></i>
+                                    <span>100,000</span>
+                                </div>
+                            
+                                <div class="bgc-pink radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-p"></i>
+                                    <span>10,000,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="mb20">
+                    <a href="attend03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                        <div class="flex jc-c"><img src="../assets/images/dialog_ch02.png" alt=""></div>
+                        <div class="overH">
+                            <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                            <p>홀덤매니아</p>
+                            <div>
+                                <span>2023-05-12</span>
+                                <span>20:00</span>
+                            </div>
+                            <p>에이스라운지홀덤펍</p>
+                        </div>
+
+                        <div class="flex ai-c fd-c gap05">
+                            <div class="flex ai-c gap10">
+                                <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                <span>9/18</span>
+                            </div>
+
+                            <div class="flex fd-c gap05">
+                                <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-b filter-gc"></i>
+                                    <span>100,000</span>
+                                </div>
+                            
+                                <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-p filter-gc"></i>
+                                    <span>10,000,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="mb20">
+                    <a href="attend03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                        <div class="flex jc-c"><img src="../assets/images/thumb_profile_defalt.png" alt=""></div>
+                        <div class="overH">
+                            <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                            <p>홀덤매니아</p>
+                            <div>
+                                <span>2023-05-12</span>
+                                <span>20:00</span>
+                            </div>
+                            <p>에이스라운지홀덤펍</p>
+                        </div>
+
+                        <div class="flex ai-c fd-c gap05">
+                            <div class="flex ai-c gap10">
+                                <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                <span>9/18</span>
+                            </div>
+
+                            <div class="flex fd-c gap05">
+                                <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-b filter-gc"></i>
+                                    <span>100,000</span>
+                                </div>
+                            
+                                <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-p filter-gc"></i>
+                                    <span>10,000,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+            <!-- 더보기 버튼 -->
+            <div class="ta-c bdt bdb">
+                <button type="button" class="w100p pd15">
+                    <i class="i i-arrowDown"></i>
+                </button>
+            </div>
+
+        </section>
+
+    </main>
+    
+    <div class="backbg"></div>
+
+    <!--========== SCROLL UP ==========-->
+    <button type="button" class="scrollup" id="scroll-up">
+        <i class="i i-scrollTop scrollup__icon"></i>
+    </button>
+
+</body>
+
+    <!--=============== JS ===============-->
+    <script src="../assets/js/main02.js"></script>
+</html>

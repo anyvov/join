@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--=============== STYLE ===============-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>홀덤 조인</title>
+</head>
+
+<body class="noto-Regular">
+
+    <!--=============== 헤더 ===============-->
+    <header>
+        <div class="header-area bgc-main pd20 flex ai-c jc-sb">
+            <a href="index.html" class="logo"></a>
+            <div class="app-navbar">
+                <ul class="flex ai-c jc-sb gap10">
+                    <li>
+                        <a href="invitation02.html" class="flex">
+                            <i class="i i-Group poR">
+                                <span class="poA bgc-puple wsn ta-c radius50p badge">99</span>
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sub/notification.html" class="flex">
+                            <i class="i i-bell poR">
+                                <span class="poA bgc-pink wsn ta-c radius50p badge">99</span>
+                            </i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sub/login.html">
+                            <div class="flex ai-c gap10 fcWt">
+                                <i class="i i-login"></i>
+                                <span>로그인</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="mb100">
+        <section class="mainTitle mb20">
+            <h1 class="fs-24 fwb noto-Regular">대회 초청 리스트</h1>
+        </section>
+
+        <!--=============== 탭 ===============-->
+        <section>
+            <div class="tabs">
+
+                <!--:::::: 탭 버튼 ::::::-->
+                <div class="tabHead invitabs gap20 ta-c bgc-f2 pd20 flex aic jc-c mb20">
+                    <input type="radio" name="tabs" id="tabBtn" checked>
+                    <label for="tabBtn">전체</label>
+
+                    <input type="radio" name="tabs" id="tabBtn2">
+                    <label for="tabBtn2">신규초청대회</label>
+
+                    <input type="radio" name="tabs" id="tabBtn3">
+                    <label for="tabBtn3">지난대회</label>
+                </div>
+
+                <!--:::::: 탭 컨텐츠01 - 전체 ::::::-->
+                <div class="tab-content pd20 active">
+                    <!-- 리스트 -->
+                    <ul class="pdlr20">
+                        <li class="mb20">
+                            <a href="invitation02.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                                <div class="flex jc-c"><img src="../assets/images/dialog_ch01.png" alt=""></div>
+                                <div class="overH">
+                                    <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                                    <p>홀덤매니아</p>
+                                    <div>
+                                        <span>2023-05-12</span>
+                                        <span>20:00</span>
+                                    </div>
+                                    <p>에이스라운지홀덤펍</p>
+                                </div>
+
+                                <div class="flex ai-c fd-c gap05">
+                                    <div class="flex ai-c gap10">
+                                        <img src="../assets/images/icon/ico_man.png" alt="">
+                                        <span>9/18</span>
+                                    </div>
+
+                                    <div class="flex fd-c gap05">
+                                        <div class="bgc-FD radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-b"></i>
+                                            <span>100,000</span>
+                                        </div>
+                                    
+                                        <div class="bgc-pink radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-p"></i>
+                                            <span>10,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mb20">
+                            <a href="#" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                                <div class="flex jc-c"><img src="../assets/images/thumb_profile_defalt.png" alt=""></div>
+                                <div class="overH">
+                                    <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                                    <p>홀덤매니아</p>
+                                    <div>
+                                        <span>2023-05-12</span>
+                                        <span>20:00</span>
+                                    </div>
+                                    <p>에이스라운지홀덤펍</p>
+                                </div>
+
+                                <div class="flex ai-c fd-c gap05">
+                                    <div class="flex ai-c gap10">
+                                        <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                        <span>9/18</span>
+                                    </div>
+
+                                    <div class="flex fd-c gap05">
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-b filter-gc"></i>
+                                            <span>100,000</span>
+                                        </div>
+                                    
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-p filter-gc"></i>
+                                            <span>10,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mb20">
+                            <a href="#" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                                <div class="flex jc-c"><img src="../assets/images/dialog_ch01.png" alt=""></div>
+                                <div class="overH">
+                                    <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                                    <p>홀덤매니아</p>
+                                    <div>
+                                        <span>2023-05-12</span>
+                                        <span>20:00</span>
+                                    </div>
+                                    <p>에이스라운지홀덤펍</p>
+                                </div>
+
+                                <div class="flex ai-c fd-c gap05">
+                                    <div class="flex ai-c gap10">
+                                        <img src="../assets/images/icon/ico_man.png" alt="">
+                                        <span>9/18</span>
+                                    </div>
+
+                                    <div class="flex fd-c gap05">
+                                        <div class="bgc-FD radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-b"></i>
+                                            <span>100,000</span>
+                                        </div>
+                                    
+                                        <div class="bgc-pink radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-p"></i>
+                                            <span>10,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mb20">
+                            <a href="#" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                                <div class="flex jc-c"><img src="../assets/images/dialog_ch02.png" alt=""></div>
+                                <div class="overH">
+                                    <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                                    <p>홀덤매니아</p>
+                                    <div>
+                                        <span>2023-05-12</span>
+                                        <span>20:00</span>
+                                    </div>
+                                    <p>에이스라운지홀덤펍</p>
+                                </div>
+
+                                <div class="flex ai-c fd-c gap05">
+                                    <div class="flex ai-c gap10">
+                                        <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                        <span>9/18</span>
+                                    </div>
+
+                                    <div class="flex fd-c gap05">
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-b filter-gc"></i>
+                                            <span>100,000</span>
+                                        </div>
+                                    
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-p filter-gc"></i>
+                                            <span>10,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mb20">
+                            <a href="#" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                                <div class="flex jc-c"><img src="../assets/images/thumb_profile_defalt.png" alt=""></div>
+                                <div class="overH">
+                                    <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                                    <p>홀덤매니아</p>
+                                    <div>
+                                        <span>2023-05-12</span>
+                                        <span>20:00</span>
+                                    </div>
+                                    <p>에이스라운지홀덤펍</p>
+                                </div>
+
+                                <div class="flex ai-c fd-c gap05">
+                                    <div class="flex ai-c gap10">
+                                        <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                        <span>9/18</span>
+                                    </div>
+
+                                    <div class="flex fd-c gap05">
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-b filter-gc"></i>
+                                            <span>100,000</span>
+                                        </div>
+                                    
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-p filter-gc"></i>
+                                            <span>10,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--:::::: 탭 컨텐츠02 - 신규초청대회 ::::::-->
+                <div class="tab-content pd20">
+                    <!-- 리스트 -->
+                    <ul class="pdlr20">
+                        <li class="mb20">
+                            <a href="invitation02.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                                <div class="flex jc-c"><img src="../assets/images/dialog_ch01.png" alt=""></div>
+                                <div class="overH">
+                                    <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                                    <p>홀덤매니아</p>
+                                    <div>
+                                        <span>2023-05-12</span>
+                                        <span>20:00</span>
+                                    </div>
+                                    <p>에이스라운지홀덤펍</p>
+                                </div>
+
+                                <div class="flex ai-c fd-c gap05">
+                                    <div class="flex ai-c gap10">
+                                        <img src="../assets/images/icon/ico_man.png" alt="">
+                                        <span>9/18</span>
+                                    </div>
+
+                                    <div class="flex fd-c gap05">
+                                        <div class="bgc-FD radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-b"></i>
+                                            <span>100,000</span>
+                                        </div>
+                                    
+                                        <div class="bgc-pink radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-p"></i>
+                                            <span>10,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mb20">
+                            <a href="#" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                                <div class="flex jc-c"><img src="../assets/images/thumb_profile_defalt.png" alt=""></div>
+                                <div class="overH">
+                                    <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                                    <p>홀덤매니아</p>
+                                    <div>
+                                        <span>2023-05-12</span>
+                                        <span>20:00</span>
+                                    </div>
+                                    <p>에이스라운지홀덤펍</p>
+                                </div>
+
+                                <div class="flex ai-c fd-c gap05">
+                                    <div class="flex ai-c gap10">
+                                        <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                        <span>9/18</span>
+                                    </div>
+
+                                    <div class="flex fd-c gap05">
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-b filter-gc"></i>
+                                            <span>100,000</span>
+                                        </div>
+                                    
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-p filter-gc"></i>
+                                            <span>10,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mb20">
+                            <a href="#" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                                <div class="flex jc-c"><img src="../assets/images/dialog_ch01.png" alt=""></div>
+                                <div class="overH">
+                                    <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                                    <p>홀덤매니아</p>
+                                    <div>
+                                        <span>2023-05-12</span>
+                                        <span>20:00</span>
+                                    </div>
+                                    <p>에이스라운지홀덤펍</p>
+                                </div>
+
+                                <div class="flex ai-c fd-c gap05">
+                                    <div class="flex ai-c gap10">
+                                        <img src="../assets/images/icon/ico_man.png" alt="">
+                                        <span>9/18</span>
+                                    </div>
+
+                                    <div class="flex fd-c gap05">
+                                        <div class="bgc-FD radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-b"></i>
+                                            <span>100,000</span>
+                                        </div>
+                                    
+                                        <div class="bgc-pink radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-p"></i>
+                                            <span>10,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mb20">
+                            <a href="#" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                                <div class="flex jc-c"><img src="../assets/images/dialog_ch02.png" alt=""></div>
+                                <div class="overH">
+                                    <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                                    <p>홀덤매니아</p>
+                                    <div>
+                                        <span>2023-05-12</span>
+                                        <span>20:00</span>
+                                    </div>
+                                    <p>에이스라운지홀덤펍</p>
+                                </div>
+
+                                <div class="flex ai-c fd-c gap05">
+                                    <div class="flex ai-c gap10">
+                                        <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                        <span>9/18</span>
+                                    </div>
+
+                                    <div class="flex fd-c gap05">
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-b filter-gc"></i>
+                                            <span>100,000</span>
+                                        </div>
+                                    
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-p filter-gc"></i>
+                                            <span>10,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mb20">
+                            <a href="#" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                                <div class="flex jc-c"><img src="../assets/images/thumb_profile_defalt.png" alt=""></div>
+                                <div class="overH">
+                                    <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                                    <p>홀덤매니아</p>
+                                    <div>
+                                        <span>2023-05-12</span>
+                                        <span>20:00</span>
+                                    </div>
+                                    <p>에이스라운지홀덤펍</p>
+                                </div>
+
+                                <div class="flex ai-c fd-c gap05">
+                                    <div class="flex ai-c gap10">
+                                        <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                        <span>9/18</span>
+                                    </div>
+
+                                    <div class="flex fd-c gap05">
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-b filter-gc"></i>
+                                            <span>100,000</span>
+                                        </div>
+                                    
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-p filter-gc"></i>
+                                            <span>10,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--:::::: 탭 컨텐츠03 - 지난대회 ::::::-->
+                <div class="tab-content pd20">
+                    <!-- 리스트 -->
+                    <ul class="pdlr20">
+                        <li class="mb20">
+                            <a href="invitation03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                                <div class="flex jc-c"><img src="../assets/images/dialog_ch01.png" alt=""></div>
+                                <div class="overH">
+                                    <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                                    <p>홀덤매니아</p>
+                                    <div>
+                                        <span>2023-05-12</span>
+                                        <span>20:00</span>
+                                    </div>
+                                    <p>에이스라운지홀덤펍</p>
+                                </div>
+
+                                <div class="flex ai-c fd-c gap05">
+                                    <div class="flex ai-c gap10">
+                                        <img src="../assets/images/icon/ico_man.png" alt="">
+                                        <span>9/18</span>
+                                    </div>
+
+                                    <div class="flex fd-c gap05">
+                                        <div class="bgc-FD radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-b"></i>
+                                            <span>100,000</span>
+                                        </div>
+                                    
+                                        <div class="bgc-pink radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-p"></i>
+                                            <span>10,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mb20">
+                            <a href="attend03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                                <div class="flex jc-c"><img src="../assets/images/dialog_ch02.png" alt=""></div>
+                                <div class="overH">
+                                    <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                                    <p>홀덤매니아</p>
+                                    <div>
+                                        <span>2023-05-12</span>
+                                        <span>20:00</span>
+                                    </div>
+                                    <p>에이스라운지홀덤펍</p>
+                                </div>
+
+                                <div class="flex ai-c fd-c gap05">
+                                    <div class="flex ai-c gap10">
+                                        <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                        <span>9/18</span>
+                                    </div>
+
+                                    <div class="flex fd-c gap05">
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-b filter-gc"></i>
+                                            <span>100,000</span>
+                                        </div>
+                                    
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-p filter-gc"></i>
+                                            <span>10,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mb20">
+                            <a href="attend03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                                <div class="flex jc-c"><img src="../assets/images/thumb_profile_defalt.png" alt=""></div>
+                                <div class="overH">
+                                    <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                                    <p>홀덤매니아</p>
+                                    <div>
+                                        <span>2023-05-12</span>
+                                        <span>20:00</span>
+                                    </div>
+                                    <p>에이스라운지홀덤펍</p>
+                                </div>
+
+                                <div class="flex ai-c fd-c gap05">
+                                    <div class="flex ai-c gap10">
+                                        <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                        <span>9/18</span>
+                                    </div>
+
+                                    <div class="flex fd-c gap05">
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-b filter-gc"></i>
+                                            <span>100,000</span>
+                                        </div>
+                                    
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-p filter-gc"></i>
+                                            <span>10,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mb20">
+                            <a href="attend03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                                <div class="flex jc-c"><img src="../assets/images/dialog_ch01.png" alt=""></div>
+                                <div class="overH">
+                                    <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                                    <p>홀덤매니아</p>
+                                    <div>
+                                        <span>2023-05-12</span>
+                                        <span>20:00</span>
+                                    </div>
+                                    <p>에이스라운지홀덤펍</p>
+                                </div>
+
+                                <div class="flex ai-c fd-c gap05">
+                                    <div class="flex ai-c gap10">
+                                        <img src="../assets/images/icon/ico_man.png" alt="">
+                                        <span>9/18</span>
+                                    </div>
+
+                                    <div class="flex fd-c gap05">
+                                        <div class="bgc-FD radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-b"></i>
+                                            <span>100,000</span>
+                                        </div>
+                                    
+                                        <div class="bgc-pink radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-p"></i>
+                                            <span>10,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mb20">
+                            <a href="attend03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                                <div class="flex jc-c"><img src="../assets/images/dialog_ch02.png" alt=""></div>
+                                <div class="overH">
+                                    <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                                    <p>홀덤매니아</p>
+                                    <div>
+                                        <span>2023-05-12</span>
+                                        <span>20:00</span>
+                                    </div>
+                                    <p>에이스라운지홀덤펍</p>
+                                </div>
+
+                                <div class="flex ai-c fd-c gap05">
+                                    <div class="flex ai-c gap10">
+                                        <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                        <span>9/18</span>
+                                    </div>
+
+                                    <div class="flex fd-c gap05">
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-b filter-gc"></i>
+                                            <span>100,000</span>
+                                        </div>
+                                    
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-p filter-gc"></i>
+                                            <span>10,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="mb20">
+                            <a href="attend03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                                <div class="flex jc-c"><img src="../assets/images/thumb_profile_defalt.png" alt=""></div>
+                                <div class="overH">
+                                    <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                                    <p>홀덤매니아</p>
+                                    <div>
+                                        <span>2023-05-12</span>
+                                        <span>20:00</span>
+                                    </div>
+                                    <p>에이스라운지홀덤펍</p>
+                                </div>
+
+                                <div class="flex ai-c fd-c gap05">
+                                    <div class="flex ai-c gap10">
+                                        <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                        <span>9/18</span>
+                                    </div>
+
+                                    <div class="flex fd-c gap05">
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-b filter-gc"></i>
+                                            <span>100,000</span>
+                                        </div>
+                                    
+                                        <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                            <i class="i i-p filter-gc"></i>
+                                            <span>10,000,000</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 리스트 -->
+            <ul class="pdlr20">
+                <li class="mb20">
+                    <a href="attend03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                        <div class="flex jc-c"><img src="../assets/images/dialog_ch01.png" alt=""></div>
+                        <div class="overH">
+                            <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                            <p>홀덤매니아</p>
+                            <div>
+                                <span>2023-05-12</span>
+                                <span>20:00</span>
+                            </div>
+                            <p>에이스라운지홀덤펍</p>
+                        </div>
+
+                        <div class="flex ai-c fd-c gap05">
+                            <div class="flex ai-c gap10">
+                                <img src="../assets/images/icon/ico_man.png" alt="">
+                                <span>9/18</span>
+                            </div>
+
+                            <div class="flex fd-c gap05">
+                                <div class="bgc-FD radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-b"></i>
+                                    <span>100,000</span>
+                                </div>
+                            
+                                <div class="bgc-pink radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-p"></i>
+                                    <span>10,000,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="mb20">
+                    <a href="attend03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                        <div class="flex jc-c"><img src="../assets/images/dialog_ch02.png" alt=""></div>
+                        <div class="overH">
+                            <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                            <p>홀덤매니아</p>
+                            <div>
+                                <span>2023-05-12</span>
+                                <span>20:00</span>
+                            </div>
+                            <p>에이스라운지홀덤펍</p>
+                        </div>
+
+                        <div class="flex ai-c fd-c gap05">
+                            <div class="flex ai-c gap10">
+                                <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                <span>9/18</span>
+                            </div>
+
+                            <div class="flex fd-c gap05">
+                                <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-b filter-gc"></i>
+                                    <span>100,000</span>
+                                </div>
+                            
+                                <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-p filter-gc"></i>
+                                    <span>10,000,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="mb20">
+                    <a href="attend03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                        <div class="flex jc-c"><img src="../assets/images/thumb_profile_defalt.png" alt=""></div>
+                        <div class="overH">
+                            <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                            <p>홀덤매니아</p>
+                            <div>
+                                <span>2023-05-12</span>
+                                <span>20:00</span>
+                            </div>
+                            <p>에이스라운지홀덤펍</p>
+                        </div>
+
+                        <div class="flex ai-c fd-c gap05">
+                            <div class="flex ai-c gap10">
+                                <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                <span>9/18</span>
+                            </div>
+
+                            <div class="flex fd-c gap05">
+                                <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-b filter-gc"></i>
+                                    <span>100,000</span>
+                                </div>
+                            
+                                <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-p filter-gc"></i>
+                                    <span>10,000,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="mb20">
+                    <a href="attend03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                        <div class="flex jc-c"><img src="../assets/images/dialog_ch01.png" alt=""></div>
+                        <div class="overH">
+                            <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                            <p>홀덤매니아</p>
+                            <div>
+                                <span>2023-05-12</span>
+                                <span>20:00</span>
+                            </div>
+                            <p>에이스라운지홀덤펍</p>
+                        </div>
+
+                        <div class="flex ai-c fd-c gap05">
+                            <div class="flex ai-c gap10">
+                                <img src="../assets/images/icon/ico_man.png" alt="">
+                                <span>9/18</span>
+                            </div>
+
+                            <div class="flex fd-c gap05">
+                                <div class="bgc-FD radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-b"></i>
+                                    <span>100,000</span>
+                                </div>
+                            
+                                <div class="bgc-pink radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-p"></i>
+                                    <span>10,000,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="mb20">
+                    <a href="attend03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                        <div class="flex jc-c"><img src="../assets/images/dialog_ch02.png" alt=""></div>
+                        <div class="overH">
+                            <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                            <p>홀덤매니아</p>
+                            <div>
+                                <span>2023-05-12</span>
+                                <span>20:00</span>
+                            </div>
+                            <p>에이스라운지홀덤펍</p>
+                        </div>
+
+                        <div class="flex ai-c fd-c gap05">
+                            <div class="flex ai-c gap10">
+                                <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                <span>9/18</span>
+                            </div>
+
+                            <div class="flex fd-c gap05">
+                                <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-b filter-gc"></i>
+                                    <span>100,000</span>
+                                </div>
+                            
+                                <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-p filter-gc"></i>
+                                    <span>10,000,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="mb20">
+                    <a href="attend03.html" class="grid chatRoom ai-c gap20 brf1 pd20 radius10">
+                        <div class="flex jc-c"><img src="../assets/images/thumb_profile_defalt.png" alt=""></div>
+                        <div class="overH">
+                            <h3 class="fwb overH toe wsn w100p">강남 홀덤에서 모여서 같이 한판 하실분 모셔요 </h3>
+                            <p>홀덤매니아</p>
+                            <div>
+                                <span>2023-05-12</span>
+                                <span>20:00</span>
+                            </div>
+                            <p>에이스라운지홀덤펍</p>
+                        </div>
+
+                        <div class="flex ai-c fd-c gap05">
+                            <div class="flex ai-c gap10">
+                                <img src="../assets/images/icon/ico_man.png" alt="" class="filter-gc">
+                                <span>9/18</span>
+                            </div>
+
+                            <div class="flex fd-c gap05">
+                                <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-b filter-gc"></i>
+                                    <span>100,000</span>
+                                </div>
+                            
+                                <div class="bgc-bbb radius100 fcWt flex ai-c gap05 wsn pd2-10">
+                                    <i class="i i-p filter-gc"></i>
+                                    <span>10,000,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+
+        </section>
+
+    </main>
+    
+    <div class="backbg"></div>
+
+    <!--========== SCROLL UP ==========-->
+    <button type="button" class="scrollup" id="scroll-up">
+        <i class="i i-scrollTop scrollup__icon"></i>
+    </button>
+
+        <!--=============== 메인메뉴 ===============-->
+        <nav class="mainMenu-area">
+            <ul class="grid mainMenu">
+                <li>
+                    <a href="index.html" class="menu01">
+                        <div class="flex ai-c fd-c jc-c gap05">
+                            <i class="i i-home"></i>
+                            <span>홈</span>
+                        </div>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="sub/attend.html" class="menu02">
+                        <div class="flex ai-c fd-c jc-c gap05">
+                            <i class="i i-attend"></i>
+                            <span>참가하기</span>
+                        </div>
+                    </a>
+                </li>
+    
+                
+                <li>
+                    <a href="sub/recruitment.html"  class="menu03">
+                        <div class="flex ai-c fd-c jc-c gap05">
+                            <i class="i i-recruitment"></i>
+                            <span>모집하기</span>
+                        </div>
+                    </a>
+                </li>
+    
+                <li>
+                    <a href="sub/myPage.html" class="menu04">
+                        <div class="flex ai-c fd-c jc-c gap05">
+                            <i class="i i-mp"></i>
+                            <span>마이페이지</span>
+                        </div>
+                    </a>
+                </li>
+    
+            </ul>
+        </nav>
+</body>
+
+    <!--=============== JS ===============-->
+    <script src="../assets/js/main02.js"></script>
+</html>

@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--=============== STYLE ===============-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>홀덤 조인</title>
+</head>
+<body class="noto-Regular">
+
+    <!--=============== 헤더 ===============-->
+    <header>
+        <div class="header-area bgc-main pd20 flex ai-c jc-sb">
+            <button type="button" class="i i-arrowLeft"></button>
+            <span class="fs-18 fw700">홀덤대회 만들기</span>
+            <a href="../index.html" class="i i-home02"></a>
+        </div>
+    </header>
+
+    <main>
+        <section class="mainTitle mb20">
+            <h1 class="fs-24 fwb noto-Regular">홀덤대회 만들기</h1>
+        </section>
+
+        <!--=============== 홀덤 대회 만들기 ===============-->
+        <form action="">
+            
+            <ul class="pd20">
+                <li class="mb15">
+                    <div class="flex ai-c gap10 column512">
+                        <span class="fs-16 wsn re-w100 fwb">대회이름</span>
+                        <input type="text" class="input radius10">
+                    </div>
+                </li>
+
+                <li class="mb15">
+                    <label for="" class="acoBtn02">
+                        <div class="flex ai-c gap10 column512">
+                            <span class="fs-16 wsn re-w100 fwb">대회장소</span>
+                            <input type="text" class="input radius10">
+                        </div>
+                    </label>
+
+                    <!-- 지역선택 상세 -->
+                    <div class="acoBox02 listpopup-area">
+                        <div class="bgc-wt ta-r pd20">
+                            <button class="calcloseBtn i i-close" type="button"></button>
+                        </div>
+                        
+                        <div class="bgc-wt">
+                            <h1 class="fs-24 fwb noto-Regular pd20">대회장소 검색</h1>
+                            <hr class="br-b9 mb20">
+                        </div>
+                        
+                        <form action="" class="noto-Regular">
+                            <div class="pd20">
+                                <div class="flex ai-c pd15 gap10 bgc-f2 radius10">
+                                    <i class="i i-search"></i>
+                                    <input type="search" class="brNone w100p bgc-trans" placeholder="대회장 이름 검색">
+                                    <button type="button" class="i i-close02"></button>
+                                </div>
+                            </div>
+
+                            <!-- 리스트 -->
+                            <div class="overY attendlistH">
+                                <ul>
+                                    <li class="pd20">
+                                        <h4 class="fs-16 noto-Bold mb05">골드버튼 홀덤펍</h4>
+                                        <p class="fc999">서울 송파구 잠실동</p>
+                                    </li>
+
+                                    <li class="pd20">
+                                        <h4 class="fs-16 noto-Bold mb05">골드버튼 홀덤펍</h4>
+                                        <p class="fc999">서울 송파구 잠실동</p>
+                                    </li>
+
+                                    <li class="pd20">
+                                        <h4 class="fs-16 noto-Bold mb05">골드버튼 홀덤펍</h4>
+                                        <p class="fc999">서울 송파구 잠실동</p>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="pd20">
+                                <button type="button" class="btn bgc-F2 btn-outlineF2 pd15 fcWt w100p radius10">확인</button>
+                            </div>
+                            
+                        </form>
+                    </div>
+                </li>
+
+                <li class="mb15">
+                    <div class="flex ai-c gap10 column512">
+                        <span class="fs-16 wsn re-w100 fwb">상금</span>
+                        <select name="" id="" class="input radius10">
+                            <option value="">선택</option>
+                        </select>
+                    </div>
+                </li>
+
+                <li class="mb15">
+                    <div class="flex ai-c gap10 column512">
+                        <span class="fs-16 wsn re-w100 fwb">날짜</span>
+                        <div class="flex ai-c w100p gap10 column512">
+                            <select name="" id="" class="input radius10">
+                                <option value="">년</option>
+                            </select>
+                            <select name="" id="" class="input radius10">
+                                <option value="">월</option>
+                            </select>
+                            <select name="" id="" class="input radius10">
+                                <option value="">일</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb15">
+                    <div class="flex ai-c gap10 column512">
+                        <span class="fs-16 wsn re-w100 fwb">시간</span>
+                        <div class="flex ai-c w100p gap10 column512">
+                            <select name="" id="" class="input radius10">
+                                <option value="">시간</option>
+                            </select>
+                            <select name="" id="" class="input radius10">
+                                <option value="">분</option>
+                            </select>
+                            <select name="" id="" class="input radius10">
+                                <option value="">오전</option>
+                            </select>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb15">
+                    <div class="flex ai-c gap10 column512">
+                        <span class="fs-16 wsn re-w100 fwb">바이인</span>
+                        <div class="flex ai-c w100p brf1 radius10">
+                            <input type="text" class="input brNone radius10">
+                            <span class="wsn mr10">GTD</span>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="mb15">
+                    <div class="flex ai-c gap10 column512">
+                        <span class="fs-16 wsn re-w100 fwb">참가인원</span>
+                        <ul class="grid re-grid gap20 w100p fs-16">
+                            <li>
+                                <div class="flex ai-c gap05">
+                                    <input type="radio" name="reRadio" id="reRadio01" class="check-radio" checked>
+                                    <label for="reRadio01">5명</label>
+                                </div>
+
+                            </li>
+
+                            <li>
+                                <div class="flex ai-c gap05">
+                                    <input type="radio" name="reRadio" id="reRadio02" class="check-radio">
+                                    <label for="reRadio02">6명</label>
+                                </div>
+
+                            </li>
+
+                            <li>
+                                <div class="flex ai-c gap05">
+                                    <input type="radio" name="reRadio" id="reRadio03" class="check-radio">
+                                    <label for="reRadio03">7명</label>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="flex ai-c gap05">
+                                    <input type="radio" name="reRadio" id="reRadio04" class="check-radio">
+                                    <label for="reRadio04">8명</label>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="flex ai-c gap05">
+                                    <input type="radio" name="reRadio" id="reRadio05" class="check-radio">
+                                    <label for="reRadio05">9명</label>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="flex ai-c gap05">
+                                    <input type="radio" name="reRadio" id="reRadio06" class="check-radio">
+                                    <label for="reRadio06">10명</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="mb15">
+                    <div class="flex ai-c gap10 column512">
+                        <span class="fs-16 wsn re-w100 fwb">메모</span>
+                        <textarea name="" id="" cols="30" rows="6" class="input radius10" placeholder="예) 바이인은 최대 입니다."></textarea>
+                    </div>
+                </li>
+            </ul>
+        
+            <!-- 참가자를 초청하시겠습니까? -->
+            <div class="pd20">
+                <h2 class="noto-Bold fs-18">참가자를 초청하시겠습니까?</h2>
+            </div>
+            <hr class="br-b9 mb10">
+            
+            <ul class="pd20">
+                <li class="mb15">
+                    <div class="flex ai-c gap10 column512">
+                        <span class="fs-16 wsn re-w100 fwb">옵션</span>
+                        <ul class="w100p flex fd-c gap10">
+                            <li>
+                                <div class="flex ai-c gap05">
+                                    <input type="radio" name="byinRadio" id="byin07" class="check-radio" checked>
+                                    <label for="byin07">바이인 0원</label>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="flex ai-c gap05">
+                                    <input type="radio" name="byinRadio" id="byin08" class="check-radio">
+                                    <label for="byin08">바이인 + 리바인 0원</label>
+                                </div>
+                            </li>
+
+                            <li>
+                                <div class="flex ai-c gap05">
+                                    <input type="radio" name="byinRadio" id="byin09" class="check-radio">
+                                    <label for="byin09">식사 및 음료제공</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="mb15">
+                    <div class="flex ai-c gap10 column512">
+                        <span class="fs-16 wsn re-w100 fwb">추가옵션</span>
+                        <textarea name="" id="" cols="30" rows="6" class="input radius10" placeholder="최대 90자"></textarea>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="flex ai-c gap10 column512">
+                        <span class="fs-16 wsn re-w100 fwb">초청메모</span>
+                        <textarea name="" id="" cols="30" rows="6" class="input radius10" placeholder="최대 90자"></textarea>
+                    </div>
+                </li>
+            </ul>
+
+            <!-- 선호하는 플레이어 -->
+            <div class="pd20">
+                <h2 class="noto-Bold fs-18">선호하는 플레이어</h2>
+            </div>
+            <hr class="br-b9 mb10">
+
+            <ul class="pd20">
+                <li class="mb20">
+                    <div class="flex ai-c gap10 column512">
+                        <span class="fs-16 wsn re-w100 fwb">성별</span>
+                        <div class="flex ai-c gap10 genderBtn wsn w100p column512">
+                            <div class="w100p">
+                                <input type="radio" name="gender" id="all" checked>
+                                <label for="all">무관</label>
+                            </div>
+
+                            <div class="w100p">
+                                <input type="radio" name="gender" id="men">
+                                <label for="men">남자</label>
+                            </div>
+
+                            <div class="w100p">
+                                <input type="radio" name="gender" id="women">
+                                <label for="women">여자</label>
+                            </div>
+
+                            <div class="w100p">
+                                <input type="radio" name="gender" id="couple">
+                                <label for="couple">커플</label>
+                            </div>
+                        </div>                    
+                    </div>
+                </li>
+
+                <li>
+                    <div class="flex ai-c gap10 column512">
+                        <span class="fs-16 wsn re-w100 fwb">나이</span>
+                        <div class="flex ai-c gap10 w100p">
+                            <div class="flex ai-c brf1 radius10 w100p">
+                                <input type="text" class="input brNone radius10 w100p">
+                                <span class="wsn mr10">세</span>
+                            </div>
+
+                            <span>~</span>
+
+                            <div class="flex ai-c brf1 radius10 w100p">
+                                <input type="text" class="input brNone radius10 w100p">
+                                <span class="wsn mr10">세</span>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="pd20">
+                <div class="flex ai-c gap10">
+                    <input type="checkbox" name="" id="aa" class="check-input">
+                    <label for="aa">동반자가 있으신가요?</label>
+                </div>
+            </div>
+
+            <div class="pd10">
+                <input type="submit" class="btn w100p pd20 bgc-F2 bcF2 fcWt radius10 fs-18 pointer" value="대회 등록하기">
+            </div>
+            
+        </form>
+
+    </main>
+    
+    <div class="backbg"></div>
+
+    <!--========== SCROLL UP ==========-->
+    <button type="button" class="scrollup" id="scroll-up">
+        <i class="i i-scrollTop scrollup__icon"></i>
+    </button>
+</body>
+
+    <!--=============== JS ===============-->
+    <script src="../assets/js/main02.js"></script>
+</html>

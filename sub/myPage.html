@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--=============== STYLE ===============-->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>홀덤 조인</title>
+</head>
+<body class="noto-Regular">
+
+    <!--=============== 헤더 ===============-->
+    <header>
+        <div class="header-area bgc-main pd20 flex ai-c jc-sb">
+            <button type="button" class="i i-arrowLeft"></button>
+            <span class="fs-18 fw700">마이페이지</span>
+            <a href="../index.html" class="i i-home02"></a>
+        </div>
+    </header>
+
+    <main class="mb100">
+
+        <!--=============== 상세 ===============-->
+        <section class="mainTitle mb20 flex ai-c jc-sb">
+            <h1 class="fs-24 fwb noto-Regular">동동구리</h1>
+            <a href="myPage02.html">
+                <div class="flex ai-c gap10">
+                    <span class="fwb fs-18 fc777">내 정보 수정</span>
+                    <i class="i i-arrowRight mt05 filter-gc"></i>
+                </div>
+            </a>
+        </section>
+        
+        <section>
+            
+            <form action="">
+                <!-- 프로필 이미지 -->
+                <div class="flex jc-c">
+                    <div class="img160">
+                        <img src="../assets/images/Character01.png" alt="">
+                    </div>
+                </div>
+
+                <!-- 리스트 -->
+                <ul class="pd10 fs-16 mb40">
+                    <li class="brbf1 pd20">
+                        <div class="flex ai-c jc-sb gap10 column320">
+                            <span class="fwb">이름</span>
+                            <span>김홍길동</span>
+                        </div>
+                    </li>
+
+                    <li class="brbf1 pd20">
+                        <div class="flex ai-c jc-sb gap10 column320">
+                            <span class="fwb">이메일</span>
+                            <span>naver@naver.com</span>
+                        </div>
+                    </li>
+
+                    <li class="brbf1 pd20">
+                        <div class="flex ai-c jc-sb gap10 column320">
+                            <span class="fwb">전화번호</span>
+                            <span>010-5569-9593</span>
+                        </div>
+                    </li>
+
+                    <li class="brbf1 pd20">
+                        <div class="flex ai-c jc-sb gap10 column320">
+                            <span class="fwb">거주지</span>
+                            <span>서울 송파 I 서울 강남</span>
+                        </div>
+                    </li>
+
+                    <li class="brbf1 pd20">
+                        <div class="flex ai-c jc-sb gap10 column320">
+                            <span class="fwb">대회참가 가능시간</span>
+                            <span>19:00 ~ 22:00</span>
+                        </div>
+                    </li>
+
+                    <li class="brbf1 pd20">
+                        <div class="flex ai-c jc-sb gap10 column320">
+                            <span class="fwb">참가 바이인</span>
+                            <span>60,000 ~ 100,000</span>
+                        </div>
+                    </li>
+
+                    <li class="brbf1 pd20">
+                        <div class="flex ai-c jc-sb gap10 column320">
+                            <span class="fwb">경력</span>
+                            <span>3년</span>
+                        </div>
+                    </li>
+
+                    <li class="pd20">
+                        <div class="flex fd-c jc-sb gap10">
+                            <span class="fwb">자기소개</span>
+                            <p>강남역 또는 논현역에서 오후 9시 이후로 가능하고,5~6만
+                                가능합니다. 좋은분들과 함께 하고 싶습니다.</p>
+                        </div>
+                    </li>
+                </ul>
+
+                <hr class="br-b9">
+
+                <!-- 약관/정책/로그아웃/탈퇴/공지 -->
+                <ul class="pd10 fs-16 mb40">
+                    <li class="brbf1 pd20">
+                        <a href="#" class="flex ai-c jc-sb gap10 column320">
+                            <span class="fwb">약관 및 정책</span>
+                        </a>
+                    </li>
+
+                    <li class="brbf1 pd20">
+                        <a href="#" class="flex ai-c jc-sb gap10 column320">
+                            <span class="fwb">로그아웃</span>
+                        </a>
+                    </li>
+
+                    <li class="brbf1 pd20">
+                        <a href="#" class="flex ai-c jc-sb gap10 column320">
+                            <span class="fwb">회원탈퇴</span>
+                        </a>
+                    </li>
+
+                    <li class="brbf1 pd20">
+                        <a href="notification.html" class="flex ai-c jc-sb gap10 column320">
+                            <span class="fwb">공지사항</span>
+                        </a>
+                    </li>
+
+                    <li class="brbf1 pd20">
+                        <div class="flex ai-c jc-sb gap10 column320">
+                            <span>쪽지</span>
+                            <div>
+                                <input type="checkbox" id="toggle" hidden="">
+                    
+                                <label for="toggle" class="toggleSwitch">
+                                    <span class="toggleButton"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="brbf1 pd20">
+                        <div class="flex ai-c jc-sb gap10 column320">
+                            <span>이벤트 알림</span>
+                            <div>
+                                <input type="checkbox" id="toggle02" hidden="">
+                    
+                                <label for="toggle02" class="toggleSwitch">
+                                    <span class="toggleButton"></span>
+                                </label>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="pd20">
+                        <div class="flex ai-c jc-sb gap10 column320">
+                            <div class="flex ai-c gap10">
+                                <input type="checkbox" name="event" id="aa" class="check-input" checked>
+                                <label for="aa">앱 (PUSH)</label>
+                            </div>
+
+                            <div class="flex ai-c gap10">
+                                <input type="checkbox" name="event" id="bb" class="check-input">
+                                <label for="bb">이메일</label>
+                            </div>
+
+                            <div class="flex ai-c gap10">
+                                <input type="checkbox" name="event" id="cc" class="check-input">
+                                <label for="cc">SNS</label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </form>
+            
+        </section>
+
+    </main>
+    
+    <div class="backbg"></div>
+
+    <!--========== SCROLL UP ==========-->
+    <button type="button" class="scrollup" id="scroll-up">
+        <i class="i i-scrollTop scrollup__icon"></i>
+    </button>
+
+    <!--=============== 메인메뉴 ===============-->
+    <nav class="mainMenu-area">
+        <ul class="grid mainMenu">
+            <li>
+                <a href="../index.html" class="menu01">
+                    <div class="flex ai-c fd-c jc-c gap05">
+                        <i class="i i-home"></i>
+                        <span>홈</span>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="attend.html" class="menu02">
+                    <div class="flex ai-c fd-c jc-c gap05">
+                        <i class="i i-attend"></i>
+                        <span>참가하기</span>
+                    </div>
+                </a>
+            </li>
+
+            
+            <li>
+                <a href="recruitment.html"  class="menu03">
+                    <div class="flex ai-c fd-c jc-c gap05">
+                        <i class="i i-recruitment"></i>
+                        <span>모집하기</span>
+                    </div>
+                </a>
+            </li>
+
+            <li>
+                <a href="myPage.html" class="menu04">
+                    <div class="flex ai-c fd-c jc-c gap05">
+                        <i class="i i-mp"></i>
+                        <span>마이페이지</span>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+    </nav>
+
+</body>
+
+    <!--=============== JS ===============-->
+    <script src="../assets/js/main02.js"></script>
+</html>
